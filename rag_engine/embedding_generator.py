@@ -1,5 +1,6 @@
 # rag_engine/embedding_generator.py
 import os, json, faiss, numpy as np
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 from sentence_transformers import SentenceTransformer
 
 VECTORSTORE_DIR = "vectorstore"
@@ -25,7 +26,7 @@ corpus = [describe(e) for e in employees]
 ids    = [e["id"] for e in employees]
 
 # If Free tier crashes on RAM, swap to "sentence-transformers/paraphrase-MiniLM-L3-v2"
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
 
 # Add batching to be memory-safe
 emb = model.encode(
