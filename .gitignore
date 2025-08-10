@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+chatbot.log
+
+# Environment variables
+.env
+
+# Node / Frontend
+frontend-hr/node_modules/
+frontend-hr/.next/
+frontend-hr/dist/
+frontend-hr/build/
+
+# Data & Vectorstore (if generated at runtime)
+data/
+vectorstore/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+

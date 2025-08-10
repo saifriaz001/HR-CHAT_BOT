@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=DM+Sans:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    /* Global Font Families */
+    --font-heading: "Libre Baskerville";
+    --font-paragraph: "DM Sans";
+
+    /* Global Color Palette (Semantic Tokens) */
+    --color-background: #fffdfa; /* Main page background */
+    --color-surface: #f7edd4; /* Card backgrounds, light surfaces */
+    --color-surface-inverse: #454240; /* Dark panels, footers */
+
+    --color-accent: #b88e23; /* Primary interactive color for buttons, links */
+
+    --color-text-primary: #5c4e3d; /* Main headings */
+    --color-text-secondary: #454240; /* Body text, paragraphs */
+    --color-text-tertiary: #1f2937; /* Less important labels (was gray-800) */
+    --color-text-inverse: #ffffff; /* Text on dark backgrounds (was white) */
+  }
+}

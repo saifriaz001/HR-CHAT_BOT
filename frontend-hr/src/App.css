@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=DM+Sans:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-heading: "Libre Baskerville";
+  --font-paragraph: "DM Sans";
+
+  /* Colors */
+  --color-background: #fffdfa;
+  --color-surface: #f7edd4;
+  --color-surface-inverse: #454240;
+
+  --color-accent: #b88e23;
+
+  --color-text-primary: #5c4e3d;
+  --color-text-secondary: #454240;
+  --color-text-tertiary: #1f2937;
+  --color-text-inverse: #ffffff;
+}
+
+@utility font-heading { font-family: var(--font-heading); }
+@utility font-paragraph { font-family: var(--font-paragraph); }
+
+.font-heading{
+  font-family: var(--font-heading);
+  color:var(--color-text-secondary)
+  
+  
+}
+
+.font-heading{
+  font-family: var(--font-heading);
+  color:var(--color-text-secondary)
+  
+  
+}
+
+.font-paragraph{
+  font-family: var(--font-paragraph);
+  color:var(--color-text-primary)
+}
+
+.font-paragraph1{
+  font-family: var(--font-paragraph);
+  color:white
+}
+
+.font-paragraph2{
+  font-family: var(--font-paragraph);
+  color:black
+}
