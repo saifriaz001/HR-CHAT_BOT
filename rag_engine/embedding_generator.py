@@ -1,6 +1,5 @@
 # rag_engine/embedding_generator.py
 import os, json, faiss, numpy as np
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
 from sentence_transformers import SentenceTransformer
 
 VECTORSTORE_DIR = "vectorstore"
@@ -8,7 +7,6 @@ DATA = "data/employees.json"
 INDEX = os.path.join(VECTORSTORE_DIR, "faiss_ip.index")
 MAP = os.path.join(VECTORSTORE_DIR, "id_mapping.json")
 
-# create the directory you actually intend to use
 os.makedirs(VECTORSTORE_DIR, exist_ok=True)
 
 with open(DATA, "r", encoding="utf-8") as f:
@@ -25,19 +23,19 @@ def describe(e):
 corpus = [describe(e) for e in employees]
 ids    = [e["id"] for e in employees]
 
-# If Free tier crashes on RAM, swap to "sentence-transformers/paraphrase-MiniLM-L3-v2"
-model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
+# Full model
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Add batching to be memory-safe
+# Still good to keep batching to avoid spikes
 emb = model.encode(
     corpus,
     convert_to_numpy=True,
     normalize_embeddings=True,
-    batch_size=8,              # adjust up if you have more RAM
-    show_progress_bar=False,
+    batch_size=32,
+    show_progress_bar=True,
 ).astype("float32")
 
-index = faiss.IndexFlatIP(emb.shape[1])  # cosine on unit vectors when normalized
+index = faiss.IndexFlatIP(emb.shape[1])
 index.add(emb)
 
 faiss.write_index(index, INDEX)

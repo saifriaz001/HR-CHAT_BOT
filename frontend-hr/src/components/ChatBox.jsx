@@ -76,9 +76,9 @@ export default function ChatBox() {
     updateChatById(chat.id, (c) => ({
       messages: [...c.messages, { role: "user", text }],
     }));
-
+ console.log(import.meta.env.VITE_API_URL)
     try {
-      const res = await fetch("http://localhost:8000/chat", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: text, top_k: 3 }),
@@ -135,7 +135,7 @@ export default function ChatBox() {
       <section className="flex-1 overflow-y-auto px-4 md:px-8 py-4 md:py-6">
         {chat.messages.length === 0 && !loading && (
           <div className="max-w-2xl mx-auto mt-16 text-center">
-            <h2 className="text-3xl font-semibold mb-3 font-heading">Introducing your HR Copilot</h2>
+            <h2 className="text-3xl font-semibold mb-3 font-heading">Introducing your HR Assistant</h2>
             <p className="font-paragraph">
               Ask for “Senior React dev in healthcare”, “Data scientist with NLP + AWS”, or paste a JD to get curated matches.
             </p>
