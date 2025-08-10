@@ -1,0 +1,292 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "skills": ["Python", "React", "AWS"],
+      "experience_years": 5,
+      "projects": ["E-commerce Platform (p95 < 200ms)", "Healthcare Dashboard (role-based access, audit logs)"],
+      "availability": "available"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Mehta",
+      "skills": ["Node.js", "PostgreSQL", "Redis", "Docker"],
+      "experience_years": 6,
+      "projects": ["Event-driven Orders (exactly-once outbox)", "Rate Limiter (20k RPS, sliding window)"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 3,
+      "name": "Sofia Martinez",
+      "skills": ["React", "TypeScript", "Next.js", "GraphQL"],
+      "experience_years": 4,
+      "projects": ["SSR→ISR Migration (95% cache hit)", "GraphQL Persisted Queries & CDN caching"],
+      "availability": "available"
+    },
+    {
+      "id": 4,
+      "name": "Wei Chen",
+      "skills": ["Go", "Kubernetes", "gRPC", "Prometheus"],
+      "experience_years": 7,
+      "projects": ["gRPC Fanout (p99 < 120ms)", "HPA on custom metrics (queue depth/QPS)"],
+      "availability": "1_month"
+    },
+    {
+      "id": 5,
+      "name": "Fatima Al-Sayed",
+      "skills": ["Python", "FastAPI", "RabbitMQ", "Elasticsearch"],
+      "experience_years": 5,
+      "projects": ["Search Relevance (BM25 + synonyms)", "Retry with backoff & idempotency keys"],
+      "availability": "available"
+    },
+    {
+      "id": 6,
+      "name": "David Kim",
+      "skills": ["Java", "Spring Boot", "MySQL", "Kafka"],
+      "experience_years": 8,
+      "projects": ["Saga Orchestration (compensation)", "Zero-downtime schema migrations (pt-osc)"],
+      "availability": "allocated"
+    },
+    {
+      "id": 7,
+      "name": "Priya Sharma",
+      "skills": ["React Native", "React", "Redux", "REST APIs"],
+      "experience_years": 4,
+      "projects": ["Offline-first Sync (conflict resolution)", "Push Notifications (exponential backoff + jitter)"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 8,
+      "name": "Ethan Brown",
+      "skills": ["AWS", "Terraform", "CI/CD", "Docker"],
+      "experience_years": 6,
+      "projects": ["Multi-account IaC (least privilege IAM)", "Blue/Green + canary deploys (auto rollback)"],
+      "availability": "available"
+    },
+    {
+      "id": 9,
+      "name": "Nadia Petrova",
+      "skills": ["Python", "Pandas", "Airflow", "BigQuery"],
+      "experience_years": 5,
+      "projects": ["Backfill-safe ETL (late data handling)", "DQ checks: freshness, volume, schema"],
+      "availability": "1_month"
+    },
+    {
+      "id": 10,
+      "name": "Omar Haddad",
+      "skills": ["Node.js", "Express", "MongoDB", "Redis"],
+      "experience_years": 6,
+      "projects": ["Cluster-wide token bucket limiter", "Write-behind cache (hot key protection)"],
+      "availability": "available"
+    },
+    {
+      "id": 11,
+      "name": "Emily Nguyen",
+      "skills": ["TypeScript", "React", "Vite", "Jest"],
+      "experience_years": 5,
+      "projects": ["Core Web Vitals (LCP < 2.5s)", "Design System with Visual Regression tests"],
+      "availability": "available"
+    },
+    {
+      "id": 12,
+      "name": "Arjun Iyer",
+      "skills": ["Rust", "gRPC", "PostgreSQL", "NATS"],
+      "experience_years": 7,
+      "projects": ["Low-latency Matching (lock-free ring buffer)", "Outbox pattern for reliable events"],
+      "availability": "allocated"
+    },
+    {
+      "id": 13,
+      "name": "Grace Lee",
+      "skills": ["Python", "Django", "Celery", "S3"],
+      "experience_years": 6,
+      "projects": ["Chunked Uploads + checksum", "Task Fanout with bounded concurrency"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 14,
+      "name": "Mohammed Ali",
+      "skills": ["Android", "Kotlin", "Jetpack Compose", "REST"],
+      "experience_years": 5,
+      "projects": ["Modular App (remote config)", "ANR triage & strict mode (p95 < 400ms)"],
+      "availability": "available"
+    },
+    {
+      "id": 15,
+      "name": "Julia Schneider",
+      "skills": ["iOS", "Swift", "SwiftUI", "Core Data"],
+      "experience_years": 6,
+      "projects": ["Background Sync (battery-aware)", "Subscriptions (StoreKit 2, proration)"],
+      "availability": "1_month"
+    },
+    {
+      "id": 16,
+      "name": "Miguel Santos",
+      "skills": ["Vue.js", "Nuxt", "Pinia", "REST"],
+      "experience_years": 4,
+      "projects": ["Schema-driven Form Builder", "CSR→SSR with SWR + CDN cache keys"],
+      "availability": "available"
+    },
+    {
+      "id": 17,
+      "name": "Hina Kawabata",
+      "skills": ["QA", "Cypress", "Playwright", "Postman"],
+      "experience_years": 5,
+      "projects": ["E2E on prod mirrors (data contracts)", "Flaky test quarantine, parallel shards (10× faster)"],
+      "availability": "available"
+    },
+    {
+      "id": 18,
+      "name": "Daniel Carter",
+      "skills": ["DevOps", "Kubernetes", "Helm", "GitHub Actions"],
+      "experience_years": 7,
+      "projects": ["Multi-cluster GitOps (drift detection)", "SLOs + burn-rate alerts (noise reduction)"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 19,
+      "name": "Zara Khan",
+      "skills": ["Python", "LLMs", "Vector DB", "FastAPI"],
+      "experience_years": 4,
+      "projects": ["RAG with hybrid search + rerank", "Prompt guardrails + PII redaction"],
+      "availability": "available"
+    },
+    {
+      "id": 20,
+      "name": "Thomas Müller",
+      "skills": ["C#", ".NET Core", "SQL Server", "Azure"],
+      "experience_years": 8,
+      "projects": ["Bulk Import via staging & checksums", "Retry-storm mitigation & connection pooling"],
+      "availability": "allocated"
+    },
+    {
+      "id": 21,
+      "name": "Ananya Gupta",
+      "skills": ["Python", "Flask", "MySQL", "Redis"],
+      "experience_years": 5,
+      "projects": ["Session Service (sticky + stateless fallback)", "Presigned URLs + anti-hotlinking"],
+      "availability": "available"
+    },
+    {
+      "id": 22,
+      "name": "Jack Thompson",
+      "skills": ["React", "Zustand", "WebSockets", "Node.js"],
+      "experience_years": 4,
+      "projects": ["Live presence (backpressure aware)", "Collaborative editor (OT)"],
+      "availability": "available"
+    },
+    {
+      "id": 23,
+      "name": "Elena Rossi",
+      "skills": ["Product Management", "Agile", "Prioritization", "Roadmaps"],
+      "experience_years": 7,
+      "projects": ["Outcome-focused roadmap (north-star)", "Incident postmortems & guardrails"],
+      "availability": "1_month"
+    },
+    {
+      "id": 24,
+      "name": "Ahmed Raza",
+      "skills": ["Data Engineering", "Spark", "Delta Lake", "Airflow"],
+      "experience_years": 6,
+      "projects": ["Streaming ETL (exactly-once sinks)", "Z-ordering & vacuum policies"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 25,
+      "name": "Sara Ali",
+      "skills": ["Node.js", "NestJS", "PostgreSQL", "OAuth2"],
+      "experience_years": 5,
+      "projects": ["Auth & SSO (ABAC + scopes)", "Gateway policies with circuit breakers"],
+      "availability": "available"
+    },
+    {
+      "id": 26,
+      "name": "Nikhil Verma",
+      "skills": ["Python", "FastAPI", "Kafka", "ClickHouse"],
+      "experience_years": 6,
+      "projects": ["Real-time Analytics (200k EPS, rollups)", "Idempotent consumers & late events"],
+      "availability": "available"
+    },
+    {
+      "id": 27,
+      "name": "Maya Cohen",
+      "skills": ["UX Design", "Figma", "Design Systems", "Accessibility"],
+      "experience_years": 6,
+      "projects": ["WCAG AA remediation", "Token-based theming across platforms"],
+      "availability": "available"
+    },
+    {
+      "id": 28,
+      "name": "Yusuf Ibrahim",
+      "skills": ["Golang", "Redis", "Cassandra", "gRPC"],
+      "experience_years": 7,
+      "projects": ["Shard-aware cache (consistent hashing)", "TTL migration without hot partitions"],
+      "availability": "allocated"
+    },
+    {
+      "id": 29,
+      "name": "Aisha Noor",
+      "skills": ["Python", "Celery", "PostgreSQL", "S3"],
+      "experience_years": 4,
+      "projects": ["Email pipeline with DLQ", "Media processing (content hashing & dedupe)"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 30,
+      "name": "Vikram Kapoor",
+      "skills": ["Node.js", "Redis", "WebSockets", "Load Testing"],
+      "experience_years": 5,
+      "projects": ["EdTech Backend (1k CCU, p95 < 150ms)", "Realtime quiz engine (sticky shards)"],
+      "availability": "available"
+    },
+    {
+      "id": 31,
+      "name": "Hannah Park",
+      "skills": ["Python", "OpenTelemetry", "Grafana", "gRPC"],
+      "experience_years": 6,
+      "projects": ["Distributed tracing (baggage propagation)", "SLO dashboards (red/blue burn alerts)"],
+      "availability": "available"
+    },
+    {
+      "id": 32,
+      "name": "Leo Fernandez",
+      "skills": ["AWS", "Terraform", "CloudFront", "Lambda"],
+      "experience_years": 5,
+      "projects": ["Edge rewrites & A/B routing", "Cost optimization (rightsizing + Savings Plans)"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 33,
+      "name": "Dr. Sarah Chen",
+      "skills": ["Python", "TensorFlow", "PyTorch", "Computer Vision"],
+      "experience_years": 6,
+      "projects": ["Medical Diagnosis Platform (X-ray CV, Grad-CAM)", "Clinical image preprocessing pipeline (PII-safe)"],
+      "availability": "available"
+    },
+    {
+      "id": 34,
+      "name": "Michael Rodriguez",
+      "skills": ["Python", "scikit-learn", "Pandas", "ML Ops"],
+      "experience_years": 4,
+      "projects": ["Patient Risk Prediction System (EHR, HIPAA)", "Model monitoring & drift alerts (Prometheus)"],
+      "availability": "2_weeks"
+    },
+    {
+      "id": 35,
+      "name": "Olivia White",
+      "skills": ["Python", "Transformers", "Feature Stores", "Airflow"],
+      "experience_years": 5,
+      "projects": ["Online feature store (low-latency reads)", "Batch/stream feature parity checks"],
+      "availability": "available"
+    },
+    {
+      "id": 36,
+      "name": "Kenji Tanaka",
+      "skills": ["Go", "NATS", "gRPC", "PostgreSQL"],
+      "experience_years": 7,
+      "projects": ["Command/Query segregation (CQRS)", "Idempotent command handlers + dedupe keys"],
+      "availability": "1_month"
+    }
+  ]
+}

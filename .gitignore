@@ -25,8 +25,7 @@ frontend-hr/dist/
 frontend-hr/build/
 
 # Data & Vectorstore (if generated at runtime)
-data/
-vectorstore/
+
 
 # OS generated files
 .DS_Store
