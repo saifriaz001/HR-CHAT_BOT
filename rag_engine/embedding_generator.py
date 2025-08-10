@@ -2,10 +2,10 @@
 import os, json, faiss, numpy as np
 from sentence_transformers import SentenceTransformer
 
-VECTORSTORE_DIR = os.getenv("VECTORSTORE_DIR", "vectorstore")
-DATA = os.getenv("EMP_JSON_PATH", "data/employees.json")
+VECTORSTORE_DIR = "vectorstore"
+DATA = "data/employees.json"
 INDEX = os.path.join(VECTORSTORE_DIR, "faiss_ip.index")
-MAP   = os.path.join(VECTORSTORE_DIR, "id_mapping.json")
+MAP = os.path.join(VECTORSTORE_DIR, "id_mapping.json")
 
 # create the directory you actually intend to use
 os.makedirs(VECTORSTORE_DIR, exist_ok=True)
